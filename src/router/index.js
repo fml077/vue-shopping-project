@@ -13,19 +13,23 @@ export default new VueRouter({
   routes: [
     {
       path: "/home",
-      component: Home
+      component: Home,
+      meta: { showFooter: true }
     },
     {
       path: "/search",
-      component: Search
+      component: Search,
+      meta: { showFooter: true }
     },
     {
       path: "/login",
-      component: Login
+      component: Login,
+      meta: { showFooter: false }
     },
     {
       path: "/register",
-      component: Register
+      component: Register,
+      meta: { showFooter: false }
     },
     // 重定向：在项目跑起来的时候，或者访问/的时候，立马重定向到首页
     {
